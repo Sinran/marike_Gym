@@ -1,0 +1,111 @@
+@import '_basic.scss';
+
+.my-member{
+  color:rgb(51,51,51);
+  background:#f0eff5;
+  .my-members{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    box-sizing:border-box;
+    span:first-child{
+      line-height: count(82);
+      font-size: count(28);
+      color: #f6ab00;
+      font-weight: bold;
+      border-bottom: 1px solid #f6ab00;
+      margin-left: count(57);
+      box-sizing:border-box;
+    }
+    span:last-child{
+      line-height: count(82);
+      font-size: count(28);
+      margin-left: count(141);
+      font-weight: bold;
+      box-sizing:border-box;
+    }
+  }
+  .ordinary-member,.experience-class{
+    width: 100%;
+    background: #ffffff;
+    box-sizing:border-box;
+    padding: 0 count(40) 0 count(40);
+    .contain{
+      border-bottom: 1px solid #cccccc;
+      display: flex;
+      justify-content: flex-start;
+      .user-imgs{
+        margin-top: count(32);
+        img{
+          width: count(70);
+          height: count(70);
+        }
+      }
+      .card-information{
+        margin-left: count(22);
+        margin-top: count(31);
+        font-weight: bold;
+
+        .names{
+          font-size: count(28);
+          font-weight: bold;
+          span{
+            font-size: count(22);
+            margin-left: count(30);
+          }
+
+        }
+        .num-courses{
+          font-size: count(22);
+          margin-top: count(10);
+          color: #666666;
+        }
+        .spare-time{
+          font-size: count(22);
+          margin-top: count(10);
+          color: #666666;
+          span{
+            color: #f6ab00;
+          }
+        }
+        .a-time{
+          font-size: count(22);
+          margin-top: count(10);
+          color: #666666;
+        }
+        .effective-time-length{
+          font-size: count(22);
+          margin-top: count(10);
+          color: #666666;
+        }
+        .curriculum-cost{
+          font-size: count(22);
+          margin-top: count(10);
+          color: #666666;
+          margin-bottom: count(50);
+        }
+      }
+      .right{
+        margin-left: count(120);
+        margin-top: count(38);
+        .give-score{
+          font-size: count(20);
+          color: #dadada;
+          span{
+            color: #edaf3c;
+            font-size: count(25);
+          }
+        }
+        .icon-qianjin{
+          text-align: right;
+          margin-top: count(77);
+        }
+      }
+    }
+
+  }
+  .experience-class{
+    display: none;
+  }
+}
+

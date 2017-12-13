@@ -1,0 +1,205 @@
+@import '_basic.scss';
+
+
+.home{
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background: rgb(240, 239, 245);
+  .home-header{
+    height: count(250);
+    background: rgb(57, 56, 62);
+    padding: 0 count(30) 0 count(42);
+    box-sizing: border-box;
+    margin-bottom: count(22);
+    .header-picture{
+      display: inline-block;
+      width: count(126);
+      margin-right: count(57);
+      img{
+        height: count(126);
+        width: 100%;
+        border-radius: count(126);
+        overflow: hidden;
+        margin-top: count(62);
+      }
+    }
+    .header-message{
+      display: inline-block;
+      height: count(150);
+      margin-top: count(55);
+      vertical-align: top;
+      color: #fff;
+      .header-name{
+        display: inline-block;
+        font-size: count(36);
+        height: count(36);
+        margin-bottom: count(50);
+      }
+      .header-info{
+        font-size: count(24);
+        margin-bottom: count(20);
+        height: count(24);
+        line-height: count(24);
+        vertical-align: top;
+      }
+      .icon-huiyuan{
+        color: #edaf2c;
+        margin-right: count(28);
+        font-size: count(36);
+      }
+      .useful-date{
+        font-size: count(24);
+      }
+      .icon-qianjin{
+        position: absolute;
+        color: #fff;
+        font-size: count(54);
+        right: count(32);
+        top: count(98);
+      }
+      .header-info-space{
+        margin-left: count(20);
+      }
+    }
+  }
+  .home-lesson{
+    height: count(137);
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    background: #fff;
+    padding: count(30) 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0;
+    .lesson-finish{
+      display: inline-block;
+      height: count(77);
+      width: 33%;
+    }
+    .lesson-surplus{
+      border-left: 1px solid rgb(204, 204, 204);
+      border-right: 1px solid rgb(204, 204, 204);
+      display: inline-block;
+      height: count(77);
+      width: 33%;
+      vertical-align: top;
+    }
+    .lesson-integral{
+      display: inline-block;
+      height: count(77);
+      width: 33%;
+      vertical-align: top;
+    }
+    .lesson-number{
+      color: #edaf2c;
+      display: inline-block;
+      margin-bottom: count(22);
+      height: count(28);
+      line-height: count(28);
+      font-size: count(28);
+      width: 100%;
+      vertical-align: top;
+    }
+    .lesson-name{
+      display: inline-block;
+      font-size: count(28);
+      height: count(28);
+      line-height: count(28);
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+  .home-coach-reservation{
+    box-sizing: border-box;
+    width: count(620);
+    margin: auto;
+    margin-top: count(22);
+    background: #fff;
+    height: count(336);
+    text-align: center;
+    border-radius: count(5);
+    box-shadow: 0 count(5) count(5) rgb(77, 64, 67);
+    padding: count(38) count(30) count(38) count(57);
+    position: relative;
+    .reservation-title{
+      font-size: count(36);
+      color: #515151;
+      margin-bottom: count(52)
+    }
+    .reservation-name{
+      text-align: left;
+      font-size: count(28);
+      margin-bottom: count(30);
+      color: rgb(122, 122, 122);
+    }
+    .reservation-time{
+      text-align: left;
+      font-size: count(28);
+      color: rgb(122, 122, 122);
+      margin-bottom: count(30);
+      .reservation-time-message{
+        color: #edaf2c;
+      }
+    }
+    .reservation-cancel{
+      text-align: right;
+      font-size: count(24);
+      color: rgb(102, 102, 102);
+    }
+    .home-logo{
+      width: count(104);
+      height: count(104);
+      border-radius: count(104);
+      overflow: hidden;
+      position: absolute;
+      right: count(30);
+      top: count(39);
+    }
+    .home-reservation{
+      color: #edaf2c;
+    }
+  }
+  .home-picture{
+    height: count(260);
+    margin-top: count(30);
+    width: 100%;
+    background: #fff;
+    img{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  .home-operation{
+    margin-top: count(22);
+    background: #fff;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    height: count(134);
+    width: 100%;
+    font-size: 0;
+    .operation-icon{
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+    }
+    .iconfont{
+      font-size: count(46);
+      vertical-align: bottom;
+      color: #edaf2c;
+      width: 100%;
+      height: count(34);
+      display: inline-block;
+      margin-top: count(24);
+    }
+    .operation-name{
+      display: inline-block;
+      width: 100%;
+      font-size: count(26);
+      line-height: count(26);
+      height: count(26);
+      margin-top: count(24);
+    }
+  }
+}

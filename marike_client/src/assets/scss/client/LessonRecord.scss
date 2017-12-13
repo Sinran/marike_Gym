@@ -1,0 +1,73 @@
+@import '_basic.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Microsoft YaHei;
+}
+
+.lesson-record{
+  height: 100%;
+  width: 100%;
+  .iconfont{
+    color: #515151;
+  }
+  .lesson-date{
+    height: count(80);
+    padding: 0 count(40);
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(243, 244, 246);
+    line-height: count(80);
+    font-size: count(30);
+    .icon-rl{
+      position: absolute;
+      right: count(40);
+      top: count(5);
+      font-size: count(50);
+    }
+  }
+  .lesson-message{
+    color: #515151;
+    font-size: count(28);
+    padding: 0 count(40);
+    .iconfont{
+      font-size: count(30);
+      margin-right: count(20);
+    }
+    .lesson-content{
+      box-sizing: border-box;
+      height: count(188);
+      border-bottom: 1px solid rgb(204, 204, 204);
+      padding-top: count(30);
+    }
+    .lesson-content-date{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-content-member{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-content-number{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-evaluate{
+      float: right;
+      font-size: count(30);
+      color: #edaf2c;
+    }
+    .lesson-evaluate-sure{
+      float: right;
+      font-size: count(30);
+    }
+  }
+}

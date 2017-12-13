@@ -1,0 +1,84 @@
+@import '_basic.scss';
+
+.cancel-record{
+  height: 100%;
+  width: 100%;
+  background:#f0eff5;
+  .navs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background: #ffffff;
+    box-shadow: count(0) count(5) count(5) #cccccc;
+    z-index: 10;
+    span:first-child{
+      line-height: count(87);
+      border-bottom: 1px solid #f6ab00;
+      font-weight: bold;
+      font-size: count(32);
+    }
+    span:last-child{
+      line-height: count(87);
+      font-weight: bold;
+      font-size: count(32);
+    }
+
+  }
+  .ones,.twos{
+    top: count(87);
+    width: 100%;
+    position: absolute;
+    bottom:count(90);
+    overflow: scroll;
+    z-index: 5;
+    .cancel-content{
+      margin-top: count(56);
+      background: #ffffff;
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      padding-left: count(40);
+      box-sizing: border-box;
+
+      .cancel-times{
+        border-bottom: 1px solid #cccccc;
+        span:first-child{
+          line-height: count(110);
+          font-size: count(30);
+          font-weight: bold;
+
+        }
+        span:last-child{
+          line-height: count(110);
+          font-size: count(30);
+          color: #999999;
+          margin-left: count(30);
+
+        }
+      }
+    }
+    .totals{
+      position: fixed;
+      bottom: 0;
+      background: #ffffff;
+      width: 100%;
+      border-top: 1px solid #cccccc;
+      z-index: 10;
+      span:first-child{
+        line-height: count(90);
+        margin-left: count(40);
+        font-size: count(30);
+        font-weight: bold;
+      }
+      span:last-child{
+        font-size: count(30);
+        color: #f8ac00;
+        margin-left: count(30);
+      }
+    }
+  }
+  .twos{
+    display: none;
+  }
+}
+
