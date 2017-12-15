@@ -7,7 +7,7 @@
       <div class="header-message">
         <div class="header-name">周玉梅</div>
         <div class="header-info">
-          <span class="iconfont icon-huiyuan"></span>
+          <span class="iconfont icon-vip"></span>
           <span>季卡会员</span>
           <span class="header-info-space">36节私教课</span>
         </div>
@@ -43,28 +43,32 @@
         <span v-show="!reservationStatus" @click="cancelReservation">取消预约</span>
         <span v-show="reservationStatus" class="home-reservation" @click="immediateReservation">立即预约</span>
       </div>
-      <img class="home-logo" src="../../assets/img/log.png">
+      <img class="home-logo" src="../../assets/img/log.png" @click="coachMember">
     </div>
     <div class="home-picture">
-      <img src="../../assets/img/banner.png">
+      <img src="../../assets/img/banner.png" @click="experienceReservation">
     </div>
     <div class="home-operation">
-      <div class="operation-icon history-lesson" @click="historyLesson">
-        <span class="iconfont icon-yiquxiao"></span>
-        <span class="operation-name">历史课程</span>
-      </div>
-      <div class="operation-icon cancel-record" @click="cancelRecord">
-        <span class="iconfont icon-yiquxiao"></span>
-        <span class="operation-name">取消记录</span>
-      </div>
-      <div class="operation-icon my-holiday" @click="myLeave">
-        <span class="iconfont icon-yiquxiao"></span>
-        <span class="operation-name">我的请假</span>
-      </div>
-      <div class="operation-icon my-evaluate" @click="myEvaluate">
-        <span class="iconfont icon-yiquxiao"></span>
-        <span class="operation-name">我的评价</span>
-      </div>
+      <table>
+        <tr>
+          <td class="history-lesson">
+            <span class="iconfont icon-rili3"></span>
+            <span class="operation-name">历史课程</span>
+          </td>
+          <td class="cancel-record">
+            <span class="iconfont icon-yuyue1"></span>
+            <span class="operation-name">取消记录</span>
+          </td>
+          <td class="my-holiday">
+            <span class="iconfont icon-imgholiday"></span>
+            <span class="operation-name">我的请假</span>
+          </td>
+          <td class="my-evaluate">
+            <span class="iconfont icon-qianbi-lg"></span>
+            <span class="operation-name">我的评价</span>
+          </td>
+        </tr>
+      </table>
     </div>
   </div>
 </template>
@@ -73,7 +77,7 @@
   export default {
     data() {
       return{
-        reservationStatus: true
+        reservationStatus: false
       }
     },
     mounted() {
@@ -106,11 +110,18 @@
       },
       //取消预约
       cancelReservation() {
-
+        this.$router.push({path: 'IncreaseMember'})
       },
       //课程记录
       lessonRecord() {
         this.$router.push({path: 'LessonRecord'})
+      },
+      //
+      coachMember() {
+        this.$router.push({path: 'CoachMember'})
+      },
+      experienceReservation() {
+        this.$router.push({path: 'contributionStatistics'})
       }
     },
     watch: {
@@ -123,5 +134,5 @@
 </script>
 
 <style scoped lang="sass">
-  @import '../../assets/scss/client/Home.scss';
+  @import '../../assets/scss/client/ClientHome.scss';
 </style>

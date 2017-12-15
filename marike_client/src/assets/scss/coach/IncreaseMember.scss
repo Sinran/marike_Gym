@@ -1,0 +1,80 @@
+@import '../client/_basic.scss';
+
+.increase-member{
+  background:#f0eff5;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: count(29);
+  .add-user{
+    width: 100%;
+    background: #ffffff;
+    border-top:1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding-left: count(30);
+    box-sizing:border-box;
+    .name,.phone-num{
+      line-height: count(105);
+      display: flex;
+      justify-content:space-between;
+      border-bottom: 1px solid #cccccc;
+      span{
+        font-size: count(30);
+
+      }
+      input{
+        margin-right: count(30);
+        border:none;
+        outline:none;
+        text-align: right;
+        font-size: count(30);
+      }
+    }
+    .sex{
+      line-height: count(105);
+      display: flex;
+      justify-content:space-between;
+      border-bottom: 1px solid #cccccc;
+      span{
+        font-size: count(30);
+      }
+      select{
+        border:none;
+        margin-right: count(30);
+        font-size: count(30);
+        height: count(100);
+        color: #666666;
+      }
+    }
+    .class-num,.effective-length,.curriculum-cost{
+      line-height: count(105);
+      display: flex;
+      justify-content:space-between;
+      border-bottom: 1px solid #cccccc;
+      span:first-child{
+        font-size: count(30);
+      }
+      span:last-child{
+        font-size: count(30);
+        margin-right: count(30);
+        color: #666666;
+
+      }
+    }
+    .curriculum-cost{
+      border-bottom: none;
+    }
+  }
+  .button{
+    line-height: count(79);
+    width: count(344);
+    border-radius: count(5);
+    background: #f8ac00;
+    color:#ffffff;
+    text-align: center;
+    margin:auto;
+    margin-top: count(250);
+    font-size: count(31.25);
+    font-weight: bold;
+  }
+}

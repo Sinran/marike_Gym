@@ -43,7 +43,7 @@
         line-height: count(24);
         vertical-align: top;
       }
-      .icon-huiyuan{
+      .icon-vip{
         color: #edaf2c;
         margin-right: count(28);
         font-size: count(36);
@@ -179,19 +179,29 @@
     height: count(134);
     width: 100%;
     font-size: 0;
-    .operation-icon{
-      display: inline-block;
-      width: 25%;
+    table{
+      width: 100%;
+      height: 100%;
+      border-collapse:collapse;
+      border-spacing:0;
+    }
+    tr{
       text-align: center;
     }
+    td{
+      border: none;
+      text-align: center;
+      vertical-align: middle;
+      font-size: count(26);
+      padding: 0;
+    }
     .iconfont{
-      font-size: count(46);
       vertical-align: bottom;
       color: #edaf2c;
       width: 100%;
       height: count(34);
       display: inline-block;
-      margin-top: count(24);
+      margin: count(24) 0 count(20) 0;
     }
     .operation-name{
       display: inline-block;
@@ -199,7 +209,20 @@
       font-size: count(26);
       line-height: count(26);
       height: count(26);
-      margin-top: count(24);
+    }
+    .icon-imgholiday{
+      font-size: count(46);
+      height: count(44);
+      margin: count(20) 0 count(20) 0;
+    }
+    .icon-rili3{
+      font-size: count(36);
+    }
+    .icon-yuyue1{
+      font-size: count(40);
+    }
+    .icon-qianbi-lg{
+
     }
   }
 }

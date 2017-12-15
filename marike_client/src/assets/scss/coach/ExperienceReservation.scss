@@ -1,11 +1,12 @@
-@import '_basic.scss';
+@import '../client/_basic.scss';
 
-.immediate-reservation{
+.experience-reservation{
   height: 100%;
   background: rgb(240, 239, 245);
   padding-top: count(25);
   color: #515151;
   box-sizing: border-box;
+  overflow-y: auto;
   .reservation-date{
     height: count(286);
     background: #fff;
@@ -77,6 +78,7 @@
   .reservation-lesson{
     padding: 0 count(30);
     box-sizing: border-box;
+    margin-top: count(21);
     .reservation-lesson-coach{
       height: count(90);
       width: 100%;
@@ -119,24 +121,64 @@
         background: rgb(87, 85, 86);
       }
     }
-    .reservation-submit{
-      margin: count(37) 0 count(40);
-      .reservation-submit-btn{
-        display: inline-block;
-        width: 100%;
-        height: count(80);
-        border-radius: count(5);
-        background: #edaf2c;
-        color: #fff;
-        line-height: count(80);
-        text-align: center;
-        font-size: count(30);
-        font-weight: 600;
-      }
+  }
+  .reservation-client-info{
+    margin-top: count(20);
+    background: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    div{
+      height: count(86);
+      box-sizing: border-box;
+      border-bottom: 1px solid #ccc;
+      line-height: count(86);
+      padding: 0 count(33);
+      font-size: count(28);
+      color: #333;
+      position: relative;
     }
-    .reservation-remind{
-      font-size: count(18);
-      color: rgb(153, 153, 153);
+    div:last-child{
+      border: none;
+    }
+    input{
+      outline: none;
+      position: absolute;
+      height: count(80);
+      top: count(50% - count(40));
+      right: count(33);
+      border: none;
+    }
+    .input-name{
+      width: count(114);
+    }
+    .input-telephone{
+      width: count(167);
+    }
+    .source-select{
+      position: absolute;
+      height: count(80);
+      top: count(50% - count(40));
+      right: count(33);
+      border:none;
+      color: #666;
+    }
+  }
+  .reservation-submit{
+    margin-top: count(92);
+    margin-bottom: count(95);
+    box-sizing: border-box;
+    padding: 0 count(35);
+    .submit-btn{
+      display: inline-block;
+      width: 100%;
+      height: count(80);
+      background: #edaf2c;
+      color: #fff;
+      line-height: count(80);
+      text-align: center;
+      border-radius: count(5);
+      font-size: count(30);
+      font-weight: 600;
     }
   }
 }
