@@ -1,7 +1,6 @@
 @import '../client/_basic.scss';
 
 .experience-reservation{
-  height: 100%;
   background: rgb(240, 239, 245);
   padding-top: count(25);
   color: #515151;
@@ -118,7 +117,9 @@
       }
       .table-time-reserved{
         color: #fff;
-        background: rgb(87, 85, 86);
+        background-image: url(/src/assets/img/about.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -155,6 +156,7 @@
       width: count(167);
     }
     .source-select{
+      outline: none;
       position: absolute;
       height: count(80);
       top: count(50% - count(40));

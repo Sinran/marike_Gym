@@ -73,7 +73,10 @@
       <div class="client-info-source">
         <span>客户来源:</span>
         <select class="source-select">
+          <option>选择来源</option>
           <option>大众点评</option>
+          <option>微信</option>
+          <option>美团</option>
         </select>
       </div>
     </div>

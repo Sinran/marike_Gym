@@ -1,9 +1,10 @@
 <template>
     <div class="coach-member">
     <div class="my-members">
-      <span>普通会员</span><span>体验课会员</span>
+      <span :class="{'active': memberShow}" @click="memberChange(true)">普通会员</span>
+      <span :class="{'active': !memberShow}" @click="memberChange(false)">体验课会员</span>
     </div>
-    <div class="ordinary-member">
+    <div class="ordinary-member"  v-show="memberShow">
       <div class="contain">
         <div class="user-imgs">
           <img src="../../assets/img/user.png">
@@ -17,12 +18,12 @@
           <div class="curriculum-cost">课程费用：7000元</div>
         </div>
         <div class="right">
-          <div class="give-score">给您评分：<span class="iconfont icon-mm"></span>4.9分</div>
+          <div class="give-score">给您评分:<span class="iconfont icon-xing1 "></span>4.9分</div>
           <div class="iconfont icon-qianjin"></div>
         </div>
       </div>
     </div>
-    <div class="experience-class">
+    <div class="experience-class" v-show="!memberShow">
       <div class="contain">
         <div class="user-imgs">
           <img src="../../assets/img/user.png">
@@ -35,7 +36,7 @@
           <div class="curriculum-cost">客户来源：大众点评</div>
         </div>
         <div class="right">
-          <div class="give-score">给您评分：<span class="iconfont icon-mm"></span>4.9分</div>
+          <div class="give-score">给您评分:<span class="iconfont icon-xing1"></span>4.9分</div>
           <div class="iconfont icon-qianjin"></div>
         </div>
       </div>
@@ -48,14 +49,16 @@
   export default {
     data() {
       return{
-
+        memberShow: true
       }
     },
     mounted() {
 
     },
     methods: {
-
+      memberChange(val) {
+        this.memberShow = val;
+      }
     },
     computed: {
 

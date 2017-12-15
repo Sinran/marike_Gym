@@ -3,12 +3,12 @@
 .contribution-statistics{
   background:#f0eff5;
   width: 100%;
+  padding-top: count(30);
   height: 100%;
+  box-sizing: border-box;
   .content{
-    margin-top: count(30);
     background: #ffffff;
     box-sizing:border-box;
-    // border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     .select-time{
       box-sizing:border-box;
@@ -16,7 +16,6 @@
       border-bottom: 1px solid #cccccc;
       line-height: count(100);
       z-index: 10;
-
       .times-date{
         width: count(235);
         font-size: count(32);
@@ -112,7 +111,6 @@
         border:none;
       }
     }
-
   }
   .bottom{
     width: 100%;
@@ -125,6 +123,7 @@
     border-top: 1px solid #cccccc;
     padding: 0 count(21) 0 count(28);
     box-sizing: border-box;
+    z-index: 9;
     div:first-child{
       font-size: count(32);
     }

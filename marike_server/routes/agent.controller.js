@@ -5,23 +5,23 @@
 exports.userLogin = function(req, res) {
     console.log(req.body);
     let params = req.body;
-    if (Object.is(params.userName, 'zhuyawei')) {
+    if (Object.is(params.userName, 'fujianbin')) {
         let data = {
             "status": 200,
             "success": true,
+            "userType": 'coach',
             "mes": '登录成功'
         };
-        res.json(data)
+        res.json(data);
     } else {
         let data = {
             "status": 401,
             "success": true,
+            "userType": 'user',
             "mes": '用户未注册'
         };
-        res.json(data)
+        res.json(data);
     }
-    icon-shangchuan-tianchong
-    icon-shangchuan
 };
 
 /**
@@ -29,22 +29,6 @@ exports.userLogin = function(req, res) {
  * */
 exports.userSearchLesson = function(req, res) {
     console.log(req.body);
-    let params = req.body;
-    if (Object.is(params.userName, 'zhuyawei')) {
-        let data = {
-            "status": 200,
-            "success": true,
-            "mes": '登录成功'
-        };
-        res.json(data)
-    } else {
-        let data = {
-            "status": 401,
-            "success": true,
-            "mes": '用户未注册'
-        };
-        res.json(data)
-    }
 
 };
 
@@ -53,27 +37,5 @@ exports.userSearchLesson = function(req, res) {
  * */
 exports.cancelLesson = function(req, res) {
     console.log(req.body);
-    let params = req.body;
-    if (Object.is(params.userName, 'zhuyawei')) {
-        let data = {
-            "status": 200,
-            "success": true,
-            "lessonList": [
-                {name: '瑜伽', number: 5},
-                {name: '锻炼', number: 6},
-                {name: '瘦身', number: 7},
-                {name: '压腿', number: 8},
-                {name: '拉伸', number: 9}
-            ]
-        };
-        res.json(data)
-    } else {
-        let data = {
-            "status": 401,
-            "success": true,
-            "mes": '用户未注册'
-        };
-        res.json(data)
-    }
 
 };

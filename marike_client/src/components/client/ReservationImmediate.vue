@@ -50,7 +50,9 @@
           <td><span class="table-time">12:00-13:00</span></td>
         </tr>
         <tr>
-          <td><span class="table-time table-time-reserved">13:00-14:00</span></td>
+          <td>
+            <span class="table-time table-time-reserved">13:00-14:00</span>
+          </td>
           <td><span class="table-time">14:00-15:00</span></td>
           <td><span class="table-time">15:00-16:00</span></td>
         </tr>

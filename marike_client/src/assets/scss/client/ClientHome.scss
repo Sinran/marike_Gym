@@ -112,16 +112,22 @@
   }
   .home-coach-reservation{
     box-sizing: border-box;
-    width: count(620);
-    margin: auto;
+    width: 100%;
     margin-top: count(22);
-    background: #fff;
     height: count(336);
-    text-align: center;
-    border-radius: count(5);
-    box-shadow: 0 count(5) count(5) rgb(77, 64, 67);
-    padding: count(38) count(30) count(38) count(57);
-    position: relative;
+    padding: 0 count(65);
+    background: rgb(240, 239, 245);
+    .home-coach-reservation-box{
+      width: 100%;
+      box-sizing: border-box;
+      background: #fff;
+      text-align: center;
+      height: 100%;
+      border-radius: count(10);
+      position: relative;
+      box-shadow: 0 count(5) count(5) rgb(77, 64, 67);
+      padding: count(38) count(30) count(38) count(57);
+    }
     .reservation-title{
       font-size: count(36);
       color: #515151;
@@ -201,7 +207,8 @@
       width: 100%;
       height: count(34);
       display: inline-block;
-      margin: count(24) 0 count(20) 0;
+      margin: count(10) 0 count(20) 0;
+      font-size: count(40);
     }
     .operation-name{
       display: inline-block;
@@ -212,17 +219,87 @@
     }
     .icon-imgholiday{
       font-size: count(46);
-      height: count(44);
-      margin: count(20) 0 count(20) 0;
+      height: count(34);
+      margin: count(6) 0 count(24) 0;
     }
-    .icon-rili3{
-      font-size: count(36);
+    .icon-yuyue2{
+      font-size: count(46);
     }
-    .icon-yuyue1{
-      font-size: count(40);
+    .icon-yuyue3{
+      font-size: count(38);
+      margin: count(12) 0 count(18) 0;
     }
-    .icon-qianbi-lg{
-
+  }
+  .cancel-reservation{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2%);
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .cancel-reservation-box{
+      position: absolute;
+      height: count(336);
+      width: 100%;
+      background: transparent;
+      top: count(431);
+      box-sizing: border-box;
+      padding: 0 count(65);
+    }
+    .cancel-reservation-content{
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      border-radius: count(10);
+    }
+    .cancel-content{
+      text-align: center;
+      height: count(242);
+      font-size: count(30);
+      color: #121214;
+      img{
+        width: count(104);
+        height: count(104);
+        margin: count(22) 0 count(36);
+      }
+    }
+    .cancel-btn{
+      text-align: center;
+      height: count(92);
+      line-height: count(92);
+      box-sizing: border-box;
+      border-top: 1px solid #f8ac00;
+      color: #f8ac00;
+    }
+    .confirm-content{
+      text-align: center;
+      height: count(262);
+      font-size: count(30);
+      color: #121214;
+      .confirm-content-message{
+        margin-bottom: count(10);
+      }
+      .confirm-content-evaluate{
+        font-size: count(26);
+        color: #666;
+      }
+      img{
+        width: count(104);
+        height: count(104);
+        margin: count(22) 0 count(26);
+      }
+    }
+    .confirm-btn{
+      text-align: center;
+      height: count(72);
+      line-height: count(72);
+      box-sizing: border-box;
+      border-top: 1px solid #f8ac00;
+      color: #f8ac00;
     }
   }
 }

@@ -109,6 +109,7 @@
         box-sizing: border-box;
         line-height: count(50);
         text-align: center;
+        position: relative;
       }
       .table-time-choose{
         color: #fff;
@@ -116,7 +117,9 @@
       }
       .table-time-reserved{
         color: #fff;
-        background: rgb(87, 85, 86);
+        background-image: url(/src/assets/img/about.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
       }
     }
     .reservation-submit{

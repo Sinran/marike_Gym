@@ -49,16 +49,6 @@
             <span>56</span>节
           </div>
         </div>
-        <div class="first-lines">
-          <div class="left">
-            <span>10</span>
-            <span>体验课程:</span>
-          </div>
-          <div class="right">
-            <span>56</span>节
-          </div>
-        </div>
-
       </div>
 
     </div>

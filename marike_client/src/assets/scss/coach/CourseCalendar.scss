@@ -1,0 +1,204 @@
+@import '../client/_basic.scss';
+
+.course-calendar{
+  .top-week{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    line-height: count(36);
+    background: #f6ab00;
+    color: #ffffff;
+    font-size: count(20);
+
+  }
+  .date-calendar{
+    width: 100%;
+    box-sizing:border-box;
+
+    .date-calendar-table{
+      width: 100%;
+      text-align: center;
+      box-sizing:border-box;
+      .date-year-month{
+        width: 100%;
+        box-sizing:border-box;
+        padding: 0 count(20) 0 count(20);
+        width: 100%;
+        line-height: count(80);
+        td{
+          .icon-xiangzuozhedie,.icon-xiangyoufen{
+            font-size: count(36);
+            color: #999999;
+          }
+          span:nth-child(2){
+            color: #f6ab00;
+            font-size: count(36);
+            margin-left: count(200);
+            margin-right: count(200);
+          }
+        }
+      }
+
+
+      .date-day{
+        box-sizing:border-box;
+        padding: 0 count(20) 0 count(20);
+        width: 100%;
+        display: flex;
+        border-top: 1px solid #999999;
+        td{
+          flex:1;
+          position: relative;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+
+          span{
+            display: block;
+          }
+          .have-rest{
+            margin-top: count(20);
+            right: count(0);
+            text-align: center;
+            position: absolute;
+            border: 1px solid #f6ab00;
+            font-size: count(18);
+            line-height: count(22);
+            width: count(22);
+            color:  #f6ab00;
+          }
+
+          .day-time{
+            color: #999999;
+            font-size: count(36);
+            line-height: count(141);
+
+          }
+          .future-time{
+            color: #333333;
+          }
+          .active{
+            color: #f6ab00 !important;
+            font-size: count(30) !important;
+          }
+          .today-date{
+            margin-top: count(40);
+            width: count(60);
+            line-height: count(60);
+            background: #f6ab00;
+            border-radius: 100%;
+
+          }
+          .lessons-number{
+            position: absolute;
+            margin:0 auto;
+            width: count(40);
+            line-height: count(40);
+            border-radius: 100%;
+            background:  #f6ab00;
+            color: #ffffff;
+            top: count(98);
+            font-size: count(20);
+          }
+          .today-lesson{
+            position: absolute;
+            width: count(40);
+            line-height: count(40);
+            border-radius: 100%;
+            background:  #fb0041;
+            color: #ffffff;
+            top: count(98);
+            font-size: count(20);
+          }
+        }
+      }
+
+      .date-day:last-child{
+        height: count(160);
+      }
+
+    }
+
+  }
+  .active{
+    color: #f6ab00 !important;
+    font-size: count(30) !important;
+  }
+  .date-lesson{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 count(40) 0 count(40);
+    line-height: count(80);
+    background: #f0eff5;
+    div:first-child{
+      font-size: count(36);
+      span{
+        color: #edaf2c;
+      }
+      span:first-child{
+        margin-right: count(12);
+      }
+      span:last-child{
+        margin-right: count(12);
+        margin-left: count(12);
+
+      }
+    }
+    div:last-child{
+      font-size: count(36);
+      span{
+        color: #edaf2c;
+        margin-right: count(12);
+        margin-left: count(12);
+
+      }
+
+    }
+  }
+
+  .lesson-message{
+    font-size: count(28);
+    padding: 0 count(40);
+    color: #333333;
+    box-sizing:border-box;
+    .iconfont{
+      font-size: count(20);
+      margin-right: count(20);
+
+    }
+    .lesson-content{
+      box-sizing: border-box;
+      height: count(188);
+      border-bottom: 1px solid rgb(204, 204, 204);
+      padding-top: count(30);
+    }
+    .lesson-content-date{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-content-coach{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-content-number{
+      height: count(30);
+      font-size: count(28);
+      margin-bottom: count(20);
+      line-height: count(30);
+    }
+    .lesson-evaluate{
+      float: right;
+      font-size: count(30);
+      color: #edaf2c;
+    }
+    .lesson-evaluate-sure{
+      float: right;
+      font-size: count(30);
+    }
+  }
+}

@@ -90,33 +90,33 @@
       <img src="../../assets/img/banner.png">
     </div>
     <div class="home-operation">
-      <table>
+      <table @click="coachAction">
         <tr>
-          <td class="history-lesson" @click="courseCalendar">
-            <span class="iconfont icon-rili2"></span>
-            <span class="operation-name">课程日历</span>
+          <td class="lesson-date">
+            <span class="iconfont icon-rili2 lesson-date"></span>
+            <span class="operation-name lesson-date">课程日历</span>
           </td>
-          <td class="my-evaluate">
-            <span class="iconfont icon-wodehuiyuan" @click="coachMember"></span>
-            <span class="operation-name">我的会员</span>
+          <td class="my-member">
+            <span class="iconfont icon-wodehuiyuan my-member"></span>
+            <span class="operation-name my-member">我的会员</span>
           </td>
-          <td class="cancel-record" @click="myHoliday">
-            <span class="iconfont icon-imgholiday"></span>
-            <span class="operation-name">我的请假</span>
+          <td class="my-holiday">
+            <span class="iconfont icon-imgholiday my-holiday"></span>
+            <span class="operation-name my-holiday">我的请假</span>
           </td>
-          <td class="my-holiday" @click="contributionStatistics">
-            <span class="iconfont icon-youlegongxianzhi"></span>
-            <span class="operation-name">贡献统计</span>
+          <td class="contribution-data">
+            <span class="iconfont icon-youlegongxianzhi contribution-data"></span>
+            <span class="operation-name contribution-data">贡献统计</span>
           </td>
         </tr>
         <tr>
-          <td class="history-lesson">
-            <span class="iconfont icon-ticheng"></span>
-            <span class="operation-name">课时提成</span>
+          <td class="lesson-ommission">
+            <span class="iconfont icon-ticheng lesson-ommission"></span>
+            <span class="operation-name lesson-ommission">课时提成</span>
           </td>
-          <td class="my-evaluate">
-            <span class="iconfont icon-huiyuantuiguangdingdan-"></span>
-            <span class="operation-name">会员推广</span>
+          <td class="member-push">
+            <span class="iconfont icon-huiyuantuiguangdingdan- member-push"></span>
+            <span class="operation-name member-push">会员推广</span>
           </td>
         </tr>
       </table>
@@ -136,23 +136,28 @@
 
     },
     methods: {
-      courseCalendar() {
-        this.$router.push({path: 'CourseCalendar'})
-      },
-      coachMember() {
-        this.$router.push({path: 'CoachMember'})
-      },
       experienceReservation() {
         this.$router.push({path: 'ExperienceReservation'})
       },
-      contributionStatistics() {
-        this.$router.push({path: 'ContributionStatistics'})
-      },
-      myHoliday() {
-
-      },
       increaseMember() {
         this.$router.push({path: 'IncreaseMember'})
+      },
+      coachAction() {
+        let ev = ev || window.event;
+        let target = ev.target || ev.srcElement;
+        if (!Object.is(target.className.indexOf('lesson-date'), -1)) {
+          this.$router.push({path: 'CourseCalendar'})
+        } else if (!Object.is(target.className.indexOf('my-member'), -1)) {
+          this.$router.push({path: 'CoachMember'})
+        } else if (!Object.is(target.className.indexOf('my-holiday'), -1)) {
+          this.$router.push({path: 'MyLeave'})
+        } else if (!Object.is(target.className.indexOf('contribution-data'), -1)) {
+          this.$router.push({path: 'ContributionStatistics'})
+        } else if (!Object.is(target.className.indexOf('lesson-ommission'), -1)) {
+
+        } else if (!Object.is(target.className.indexOf('member-push'), -1)) {
+
+        }
       }
     },
     computed: {
